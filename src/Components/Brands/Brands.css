@@ -1,0 +1,9 @@
+.Brands {
+    background-color: #FAFAFA;
+    padding: 50px 0;
+}
+
+.Brands .item {
+    padding: 30px 0px;
+    text-align: center;
+}

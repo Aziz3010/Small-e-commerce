@@ -1,0 +1,148 @@
+.shop .shop_top {
+    padding: 13px 0;
+    align-items: center;
+}
+
+.shop .feature {
+    margin: 13px 0;
+}
+
+.shop .feature p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: .2px;
+    color: #737373;
+}
+
+.shop .feature form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F9F9F9;
+    border: 1px solid #E4E4E4;
+    padding-right: 13px;
+}
+
+.shop .feature form input {
+    width: 100%;
+    padding: 10.5px 13px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .2px;
+}
+
+.shop .shop_top :last-child .feature {
+    text-align: right;
+}
+
+.shop .feature select {
+    border: 1px solid #DDDDDD;
+    background-color: #F9F9F9;
+    border-radius: 5px;
+    padding: 11px 18px;
+    margin-right: 15px;
+    width: 141px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+
+.shop .feature button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    width: 94px;
+    background-color: #23A6F0;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.shop .feature.search_box {
+    display: block;
+}
+
+.shop .feature.grid_box {
+    display: none;
+}
+
+@media only screen and (max-width: 991px) {
+
+    .shop .feature select,
+    .shop .feature button {
+        width: 48%;
+        margin: 2px;
+        padding: 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .shop .shop_top :last-child .feature {
+        text-align: left;
+    }
+
+    .shop .feature select {
+        width: 141px;
+        padding: 11px 18px;
+    }
+
+    .shop .feature button {
+        width: 91px;
+        padding: 10px 20px;
+    }
+
+    .shop .feature.search_box {
+        display: none;
+    }
+
+    .shop .feature.grid_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .shop .feature.grid_box h6 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #737373;
+        margin: 0;
+        margin-right: 15px;
+    }
+    
+    .shop .feature.grid_box .views {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .shop .feature.grid_box .views div {
+        border: 1px solid #e5e5e5;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .shop .shop_top,
+    .shop .shop_top :last-child .feature {
+        text-align: center;
+    }
+}
+
+.shop .shop_allProducts {
+    margin-top: 48px;
+}

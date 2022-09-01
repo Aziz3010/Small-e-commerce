@@ -1,0 +1,148 @@
+.Navbar {
+    background-color: #fff;
+    padding: 24px 30px;
+}
+
+.Navbar .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.brand_menuBTN {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar_brand {
+    font-size: 24px;
+    color: #252B42;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.navbar_brand:hover {
+    color: #252B42;
+}
+
+#menuBTN {
+    cursor: pointer;
+    display: none;
+}
+
+.links_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+}
+
+.navbar_links_pages,
+.navbar_links_login_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navbar_links_pages a,
+.navbar_links_login_icons a {
+    display: block;
+    line-height: 24px;
+    font-size: 14px;
+    margin: 0 15px;
+    font-weight: 700;
+}
+
+.navbar_links_pages a {
+    color: #737373;
+}
+
+.navbar_links_pages a:hover {
+    color: #737373;
+}
+
+.navbar_links_login_icons a {
+    color: #23A6F0;
+}
+
+.navbar_links_login_icons a:hover {
+    color: #23A6F0;
+}
+
+.user_icon {
+    margin-right: 5px;
+}
+
+.badge_number {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.arrowIcon {
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .links_list {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .Navbar .container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .brand_menuBTN {
+        width: 100%;
+    }
+
+    #menuBTN {
+        display: block;
+    }
+
+    .links_list {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .links_list.show {
+        display: flex;     
+    }
+    .links_list.hide {
+        display: none;     
+    }
+
+    .navbar_links_pages,
+    .navbar_links_login_icons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar_links_pages a,
+    .navbar_links_login_icons a {
+        line-height: 45px;
+        font-size: 30px;
+        margin: 10px 0;
+        font-weight: 400;
+    }
+
+    .arrowIcon {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 346px) {
+    .navbar_links_pages li,
+    .navbar_links_login_icons li {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar_links_login_icons li:nth-child(1) a {
+        font-size: 25px;
+    }
+}
