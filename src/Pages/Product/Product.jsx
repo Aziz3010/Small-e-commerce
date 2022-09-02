@@ -28,8 +28,7 @@ const Product = () => {
     for (let j = 0; j < (5 - Products[id - 1].rank); j++) {
       stars_box.current.innerHTML += `<img src=${unFillStar} alt="unFillStar" />`;
     }
-    console.log("aaa");
-  },[id]);
+  }, [id]);
 
   return <section className='productDetails'>
 
@@ -91,7 +90,7 @@ const Product = () => {
       <div className="row">
         {Products.filter((ele) => ele.rank >= 4).map((product, index) => {
           return (
-            <div key={index} className="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div key={index} className="col-lg-3 col-md-4 col-sm-6 col-12" onClick={()=>{window.scrollTo(0,0)}}>
               <ProductCard id={product.id} image={product.image} title={product.title} category={product.category} price={product.price} currentPrice={product.currentPrice} colors={product.colors} />
             </div>
           )

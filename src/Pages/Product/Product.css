@@ -109,7 +109,6 @@
     color: #737373;
 }
 
-
 .product_details_section .right h3 {
     font-weight: 700;
     font-size: 24px;
@@ -149,7 +148,6 @@
 .product_details_section .right .availability h6:last-child.out {
     color: red;
 }
-
 
 .product_details_section .right p {
     font-weight: 400;
@@ -214,7 +212,7 @@
 .productDetails .bestseller_title {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 23px;
     line-height: 32px;
     letter-spacing: 0.1px;
     color: #252B42;
