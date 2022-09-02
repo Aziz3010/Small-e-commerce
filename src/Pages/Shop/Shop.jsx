@@ -108,7 +108,7 @@ const Shop = () => {
         {Products.map((product, index) => {
           return (
             <div key={index} className="col-lg-3 col-md-4 col-sm-6 col-12">
-              <ProductCard id={index} image={product.image} title={product.title} category={product.category} price={product.price} currentPrice={product.currentPrice} colors={product.colors} />
+              <ProductCard id={product.id} image={product.image} title={product.title} category={product.category} price={product.price} currentPrice={product.currentPrice} colors={product.colors} />
             </div>
           )
         })}

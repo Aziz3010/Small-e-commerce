@@ -9,6 +9,7 @@
 
 .ProductCard .product_details {
     padding: 25px 0 35px 0;
+    background-color: #fff;
 }
 
 .ProductCard .product_details h5 {
