@@ -9,9 +9,6 @@ const Layout = () => {
         <Navbar />
         <main>
             <View />
-            {/* after navbar */}
-            {/* products */}
-            {/* product details */}
         </main>
         <Brands />
         <Footer />

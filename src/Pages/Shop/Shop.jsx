@@ -4,12 +4,68 @@ import Products from "../../ProductsAPI.js";
 import searchIcon from "../../assets/search-inp.svg";
 import menuGridIcon from "../../assets/menuGrid.svg";
 import listGridIcon from "../../assets/listGrid.svg";
+import arrow2Icon from "../../assets/arrow2.svg";
+import { Link } from "react-router-dom";
+
 import "./Shop.css";
 
 const Shop = () => {
   return <section className='shop'>
-    <div className='container'>
 
+    {/* categories */}
+    <div className="shop_categories">
+      <div className="container">
+
+        <div className="row">
+          <div className="col-12">
+            <div className="top_part">
+              <h3>Shop</h3>
+              <div className="routes">
+                <p>Home</p>
+                <img src={arrow2Icon} alt="arrow2" />
+                <p>Shop</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="categories">
+          <div className="category">
+            <Link to="/">
+              <h5>cloths</h5>
+              <p>5 Items</p>
+            </Link>
+          </div>
+          <div className="category">
+            <Link to="/">
+              <h5>cloths</h5>
+              <p>5 Items</p>
+            </Link>
+          </div>
+          <div className="category">
+            <Link to="/">
+              <h5>cloths</h5>
+              <p>5 Items</p>
+            </Link>
+          </div>
+          <div className="category">
+            <Link to="/">
+              <h5>cloths</h5>
+              <p>5 Items</p>
+            </Link>
+          </div>
+          <div className="category">
+            <Link to="/">
+              <h5>cloths</h5>
+              <p>5 Items</p>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* allProducts  */}
+    <div className='container'>
       <div className="row shop_top">
         <div className="col-lg-4 col-md-4 col-sm-6">
           <div className="feature">
@@ -18,12 +74,14 @@ const Shop = () => {
         </div>
 
         <div className="col-lg-4 col-md-4 col-sm-6">
+
           <div className="feature search_box">
             <form>
-              <input type="search" placeholder='Search'/>
+              <input type="search" placeholder='Search' />
               <img src={searchIcon} alt="search icon" />
             </form>
           </div>
+
           <div className="feature grid_box">
             <h6>Views:</h6>
             <div className="views">
@@ -31,6 +89,7 @@ const Shop = () => {
               <div><img src={listGridIcon} alt="listGrid" /></div>
             </div>
           </div>
+
         </div>
 
         <div className="col-lg-4 col-md-4 col-sm-6">
@@ -45,12 +104,11 @@ const Shop = () => {
         </div>
 
       </div>
-
       <div className="row shop_allProducts">
         {Products.map((product, index) => {
           return (
             <div key={index} className="col-lg-3 col-md-4 col-sm-6 col-12">
-              <ProductCard image={product.image} title={product.title} category={product.category} price={product.price} currentPrice={product.currentPrice} colors={product.colors} />
+              <ProductCard id={index} image={product.image} title={product.title} category={product.category} price={product.price} currentPrice={product.currentPrice} colors={product.colors} />
             </div>
           )
         })}
