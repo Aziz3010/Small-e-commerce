@@ -8,9 +8,11 @@ import likeIcon from '../../assets/like.svg';
 import arrowIcon from '../../assets/arrow.svg';
 import menuIcon from '../../assets/menu.svg';
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
   const [menuBTN, setMenuBTN] = useState(false);
+  const counter = useSelector(state=> state.addCart.counter);
 
   return <nav className="Navbar">
     <div className="container">
@@ -38,7 +40,7 @@ const Navbar = () => {
         <ul className='navbar_links_login_icons'>
           <li><Link to="/"><img src={userIcon} alt="user" className='user_icon' /> Login / Register</Link></li>
           <li><Link to="/"><img src={searchIcon} alt="searchIcon" /></Link></li>
-          <li><Link to="/"><img src={cartIcon} alt="cartIcon" className='nav_icon' /> <span className='badge_number'>1</span></Link></li>
+          <li><Link to="/"><img src={cartIcon} alt="cartIcon" className='nav_icon' /> <span className='badge_number'>{counter}</span></Link></li>
           <li><Link to="/"><img src={likeIcon} alt="likeIcon" className='nav_icon' /> <span className='badge_number'>2</span></Link></li>
         </ul>
 

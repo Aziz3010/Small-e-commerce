@@ -15,10 +15,13 @@ import cartbtn from "../../assets/cartbtn.svg";
 import eyebtn from "../../assets/eyebtn.svg";
 import './Product.css';
 import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { addProductToCart } from '../../Store/Slices/addCartSlice.js';
 
 const Product = () => {
   const { id } = useParams();
   const stars_box = useRef();
+  const dispatch = useDispatch();
 
   useEffect(() => {
     stars_box.current.innerHTML = "";
@@ -72,7 +75,7 @@ const Product = () => {
                 {Products[id - 1].colors.map((ele, index) => <div key={index} style={{ 'backgroundColor': `${ele}` }}></div>)}
               </div>
               <div className="btns">
-                <button className='addToCartBtn'>Add To Cart</button>
+                <button className='addToCartBtn' onClick={()=>dispatch(addProductToCart(1))}>Add To Cart</button>
                 <button><img src={likebtn} alt="likebtn" /></button>
                 <button><img src={cartbtn} alt="cartbtn" /></button>
                 <button><img src={eyebtn} alt="eyebtn" /></button>
