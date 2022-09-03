@@ -12,3 +12,10 @@ A ) I made fake API file called ProductsAPI.js.
 2 ) What else needs to be done if given more time?
 A ) I able to make full project but to be honest with you i do not know what is the time i will need to done.
 Because i made e commerce web app before, You can see it here [https://food-delivery-app-flax.vercel.app/home]
+
+##### Screens - Shop
+![Shop Desktop](./src/assets/screens/desktop.jpg)
+![Shop Mobile](./src/assets/screens/mobile.jpg)
+##### Screens - Product
+![Product Desktop](./src/assets/screens/desktop2.jpg)
+![Product Mobile](./src/assets/screens/mobile2.jpg)
