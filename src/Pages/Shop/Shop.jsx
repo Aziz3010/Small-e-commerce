@@ -36,8 +36,6 @@ const Shop = () => {
         }
         break;
     }
-
-    console.log(newProductsSort);
     setAllProducts(newProductsSort);
   }
 
