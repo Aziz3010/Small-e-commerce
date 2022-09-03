@@ -29,6 +29,18 @@ const Shop = () => {
           newProductsSort.push(productHighPrice[i]);
         }
         break;
+      case 'A-Z':
+        const productA_Z = allProducts.sort((a, b) => a.title.localeCompare(b.title));
+        for (let i = 0; i < productA_Z.length; i++) {
+          newProductsSort.push(productA_Z[i]);
+        }
+        break;
+      case 'Z-A':
+        const productZ_A = allProducts.sort((a, b) => b.title.localeCompare(a.title));
+        for (let i = 0; i < productZ_A.length; i++) {
+          newProductsSort.push(productZ_A[i]);
+        }
+        break;
       default:
         const defaultProductsAPI = allProducts.sort((a, b) => a.id - b.id);
         for (let i = 0; i < defaultProductsAPI.length; i++) {
@@ -139,6 +151,8 @@ const Shop = () => {
               <option value="sort">Sort</option>
               <option value="low_price">Low price</option>
               <option value="high_price">High price</option>
+              <option value="A-Z">Title A-Z</option>
+              <option value="Z-A">Title Z-A</option>
             </select>
             <button onClick={(e) => filterHandle(e)}>Filter</button>
           </div>

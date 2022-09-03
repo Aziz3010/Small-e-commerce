@@ -63,7 +63,7 @@ const Products = [
     {
         id: 5,
         image: img5,
-        title: "Graphic Design",
+        title: "Actor",
         category: "English Department",
         price: "16.48",
         currentPrice: "100",
@@ -87,7 +87,7 @@ const Products = [
     {
         id: 7,
         image: img7,
-        title: "Graphic Design",
+        title: "Zoo Keeper",
         category: "English Department",
         price: "16.48",
         currentPrice: "250.25",
